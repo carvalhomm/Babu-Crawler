@@ -16,7 +16,7 @@ public class DriverFactory {
 	}
 	
 	private static void createDriver() {				
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\teomo\\Desktop\\Arquivos Unirio\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\teomo\\Desktop\\drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(24, TimeUnit.SECONDS);						

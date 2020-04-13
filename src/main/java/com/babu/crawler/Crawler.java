@@ -18,6 +18,12 @@ public class Crawler extends BasePage {
 	}
 	
 	public void enterVotacao(By identifier) {
+		try {			
+			this.wait(4000);
+		} catch (Exception excp) {
+			System.out.println("wait exception --> " + excp.getMessage());
+		}
+		this.esperaAparecer(identifier);
 		this.clique(identifier);
 	}
 	
